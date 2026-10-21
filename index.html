@@ -15,7 +15,37 @@
     </header>
 
     <main>
+        <section class="form-section">
+            <h2>Adaugă articol</h2>
+            <form id="post-form">
+                <div class="form-group">
+                    <label for="post-title">Titlu:</label>
+                    <input 
+                        type="text" 
+                        id="post-title" 
+                        name="title" 
+                        required 
+                        minlength="3" 
+                        placeholder="Primul meu articol"
+                    >
+                </div>
 
+                <div class="form-group">
+                    <label for="post-body">Conținut:</label>
+                    <textarea 
+                        id="post-body" 
+                        name="body" 
+                        required 
+                        minlength="5" 
+                        rows="3" 
+                        placeholder="Conținut..."
+                    ></textarea>
+                </div>
+
+                <button type="submit" id="submit-btn">Adaugă articol</button>
+                <p id="form-feedback"></p>
+            </form>
+        </section>
     </main>
 
     <footer>
