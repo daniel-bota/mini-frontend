@@ -19,3 +19,21 @@ input, textarea {
     width: 100%;
     margin-bottom: 10px;
 }
+
+#posts-list {
+    list-style: none;
+    padding: 0;
+    display: grid;
+    gap: 10px;
+}
+
+#posts-list li {
+    border: 1px solid #ddd;
+    padding: 10px;
+}
+
+@media (min-width: 500px) {
+    #posts-list {
+        grid-template-columns: 1fr 1fr;
+    }
+}
